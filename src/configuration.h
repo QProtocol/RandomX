@@ -32,19 +32,19 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_ARGON_MEMORY       262144
 
 //Number of Argon2d iterations for Cache initialization.
-#define RANDOMX_ARGON_ITERATIONS   3
+#define RANDOMX_ARGON_ITERATIONS   4
 
 //Number of parallel lanes for Cache initialization.
-#define RANDOMX_ARGON_LANES        1
+#define RANDOMX_ARGON_LANES        4
 
 //Argon2d salt
-#define RANDOMX_ARGON_SALT         "RandomX\x03"
+#define RANDOMX_ARGON_SALT         "QProtocol"
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
 #define RANDOMX_CACHE_ACCESSES     8
 
 //Target latency for SuperscalarHash (in cycles of the reference CPU).
-#define RANDOMX_SUPERSCALAR_LATENCY   170
+#define RANDOMX_SUPERSCALAR_LATENCY   180
 
 //Dataset base size in bytes. Must be a power of 2.
 #define RANDOMX_DATASET_BASE_SIZE  2147483648
